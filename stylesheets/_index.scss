@@ -1,0 +1,131 @@
+header {
+
+  .banner {
+    height: 496px;
+
+  }
+
+  .banner-menu {
+    margin-top: -90px;
+
+    a {
+      height: 250px;
+      position: relative;
+      z-index: 2;
+      -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+      overflow: hidden;
+      transition: color 0.3s;
+
+      &:hover,
+      &:focus {
+        color: #3F5D45;
+      }
+
+      span {
+        letter-spacing: 10px;
+      }
+
+      .banner-menu-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: rgba(63, 93, 69, 0.8);
+        transition: background-color 0.3s;
+
+        &:hover,
+        &:focus {
+          background-color: rgba(255, 225, 128, 0.8);
+        }
+      }
+
+      .banner-menu-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -2;
+        filter: blur(5px);
+        transition: filter 0.3s;
+
+        &:hover,
+        &:focus {
+          filter: blur(0);
+        }
+      }
+    }
+  }
+}
+
+.whyChoice {
+
+  @media (min-width: 768px) {
+
+    .textSet {
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+    }
+  }
+
+  .textSet {
+    line-height: 2;
+    color: #8DA291;
+  }
+
+  @media (min-width: 768px) {
+    .moveSet-img {
+      margin-top: -24px;
+      margin-bottom: -24px;
+    }
+  }
+
+  .moveSet-img {
+    min-height: 250px;
+  }
+}
+
+.item-card {
+
+  .item-img {
+    height: 350px;
+    position: relative;
+
+    .item-img-best {
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      letter-spacing: 3px;
+    }
+
+    .item-img-love-checkbox {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      .item-img-love {
+        cursor: pointer;
+
+        .fas-love,
+        .item-img-love-check {
+          display: none;
+        }
+
+        .item-img-love-check:checked {
+          &~.far-love {
+            display: none;
+          }
+
+          &~.fas-love {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

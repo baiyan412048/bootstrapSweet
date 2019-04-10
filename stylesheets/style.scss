@@ -1,0 +1,48 @@
+//main scss
+@import 'index';
+@import 'dessert';
+@import 'login';
+@import 'cart';
+@import 'checkoutStep';
+
+
+// Required
+@import "../bootstrap/scss/functions";
+@import "helpers/variables";
+
+
+//bootstrap
+@import '../bootstrap/scss/bootstrap';
+
+//
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+
+body {
+  font-family: 'Noto Sans TC', sans-serif !important;
+
+  .bgCover {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .input-group {
+
+    .input-group-text {
+  
+      border: none;
+      outline: none;
+    }
+  
+    .form-control {
+  
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.form-control {
+  
+  border: none;
+  outline: none;
+}
