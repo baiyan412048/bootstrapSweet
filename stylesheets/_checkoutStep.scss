@@ -1,4 +1,4 @@
-.stepLine {
+.step-line {
   position: relative;
 
   &::after {
@@ -10,7 +10,7 @@
     border: 1px solid #fff;
   }
 
-  .stepDot {
+  .step-dot {
     background-color: #3F5D45;
     z-index: 1;
     border-radius: 50px;
@@ -20,7 +20,7 @@
 
 }
 
-.stepLineDark {
+.step-linedark {
   position: relative;
 
   &::after {
@@ -32,7 +32,7 @@
     border: 1px solid #3F5D45;
   }
 
-  .stepDotDark {
+  .step-dotdark {
     background-color: #fff;
     z-index: 1;
     border-radius: 50px;

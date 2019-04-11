@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container px-0">
       <h1 class="d-none">六角甜點店</h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -23,7 +23,7 @@
           width="220" height="40">
         <img class="d-lg-none" src="img/logo-sm.svg" alt="六角甜點店" height="20">
       </a>
-      <a class="text-mainG d-flex align-items-center order-md-1 ml-5" href="cart.html">
+      <a class="nav-link text-mainG d-flex align-items-center order-lg-1" href="cart.html">
         <i class="fas fa-shopping-cart"></i>
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -51,23 +51,23 @@
               <div class="bg-mainG p-40 text-white">
                 <div class="d-flex">
                   <div class="h2 text-white mr-auto">發票</div>
-                  <div class="d-flex text-white align-items-center stepLine">
-                    <i class="fas fa-circle mr-60 mb-0 stepDot h5"></i>
-                    <i class="fas fa-circle mr-60 mb-0 stepDot h5"></i>
-                    <i class="fas fa-check-circle mb-0 stepDot h5"></i>
+                  <div class="d-flex text-white align-items-center step-line">
+                    <i class="fas fa-circle mr-60 mb-0 step-dot h5"></i>
+                    <i class="fas fa-circle mr-60 mb-0 step-dot h5"></i>
+                    <i class="fas fa-check-circle mb-0 step-dot h5"></i>
                   </div>
                 </div>
                 <div class="btn-group w-100 my-40" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-lg btn-mainLight">電子發票</button>
-                  <button type="button" class="btn btn-lg btn-mainG">郵局寄送</button>
+                  <button type="button" class="btn btn-lg btn-mainLight btn-set">電子發票</button>
+                  <button type="button" class="btn btn-lg btn-mainG btn-set">郵局寄送</button>
                 </div>
                 <div class="form-group">
-                  <label class="h5 mb-5" for="">電子郵件信箱</label>
-                  <input class="form-control" type="text" name="" id="" placeholder="example@gmail.com">
+                  <label class="h5 mb-5" for="email">電子郵件信箱</label>
+                  <input class="form-control" type="email" id="email" placeholder="example@gmail.com" style="height: 56px;">
                 </div>
                 <div class="form-group">
-                    <label class="h5 mb-5" for="">統一編號 (選填)</label>
-                    <input class="form-control" type="text" name="" id="" placeholder="66666666">
+                    <label class="h5 mb-5" for="uniform-numbers">統一編號 (選填)</label>
+                    <input class="form-control" type="number" id="uniform-numbers" placeholder="66666666" style="height: 56px;">
                   </div>
               </div>
               <a href="checkout_step4.html" class="btn btn-mainY btn-block p-5">
@@ -93,7 +93,7 @@
               <div class="card-body text-center">
                 <h5 class="card-title bg-mainLight p-5">購物清單</h5>
                 <div class="row no-gutters card-text my-5 justify-content-between">
-                  <div class="bgCover col" style="background-image: url('https://bit.ly/2zzAQS4');max-width: 120px;">
+                  <div class="bg-cover col" style="background-image: url('https://bit.ly/2zzAQS4');max-width: 120px;">
                   </div>
                   <div class="col d-flex flex-column align-items-center">
                     <p>焦糖馬卡龍 (2)</p>
@@ -101,7 +101,7 @@
                   </div>
                 </div>
                 <div class="row no-gutters card-text my-5 justify-content-between">
-                  <div class="bgCover col" style="background-image: url('https://bit.ly/2zzAQS4');max-width: 120px;">
+                  <div class="bg-cover col" style="background-image: url('https://bit.ly/2zzAQS4');max-width: 120px;">
                   </div>
                   <div class="col d-flex flex-column align-items-center">
                     <p>焦糖馬卡龍 (2)</p>
@@ -109,7 +109,7 @@
                   </div>
                 </div>
                 <div class="row no-gutters card-text my-5 justify-content-between">
-                  <div class="bgCover col" style="background-image: url('https://bit.ly/2zzAQS4');max-width: 120px;">
+                  <div class="bg-cover col" style="background-image: url('https://bit.ly/2zzAQS4');max-width: 120px;">
                   </div>
                   <div class="col d-flex flex-column align-items-center">
                     <p>焦糖馬卡龍 (2)</p>
@@ -135,14 +135,14 @@
         <div class="col-md-5">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">
-                <i class="fas fa-envelope"></i>
+              <span class="input-group-text justify-content-center" id="basic-addon1" style="width: 56px;">
+                <i class="fas fa-envelope h5 m-0"></i>
               </span>
             </div>
-            <input type="text" class="form-control">
+            <input type="email" class="form-control" style="height: 56px;">
             <div class="input-group-append">
-              <button class="btn btn-mainY" type="button">
-                <i class="fas fa-arrow-right"></i>
+              <button class="btn btn-mainY" type="button" style="width: 56px;">
+                <i class="fas fa-arrow-right h5 m-0"></i>
               </button>
             </div>
           </div>
@@ -190,7 +190,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
   </script>
-  <script src="js/all.js"></script>
 </body>
 
 </html>

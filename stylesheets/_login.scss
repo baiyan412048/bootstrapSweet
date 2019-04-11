@@ -1,7 +1,46 @@
-@media (min-width: 768px) {
-  
-  .btnSet {
+.btn-set {
+  border: 1px solid #ccc !important;
 
-    border: 1px solid #ccc !important;
+}
+
+.checkbox {
+
+  input[type="checkbox"] {
+    position: relative;
+
+    &~.remember::after,
+    &~.remember::before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      bottom: 101px;
+      width: 20px;
+      height: 20px;
+      background-color: #EAF0ED;
+    }
+
+    &~.remember::after{
+      display: none;
+    }
+
+    &~.remember::before{
+      display: block;
+    }
+
+    &:checked ~ .remember::before{
+      display: none;
+    }
+
+    &:checked ~ .remember::after{
+      display: block;
+      content: "\f00c";
+      text-align: center;
+      line-height: 20px;
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      background-color: #FFE180;
+      color: #3F5D45;
+    }
   }
+
 }

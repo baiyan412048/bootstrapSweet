@@ -1,190 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC");
-header .banner {
-  height: 496px;
-}
-
-header .banner-menu {
-  margin-top: -90px;
-}
-
-header .banner-menu a {
-  height: 250px;
-  position: relative;
-  z-index: 2;
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: tb-lr;
-  writing-mode: vertical-lr;
-  overflow: hidden;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-header .banner-menu a:hover, header .banner-menu a:focus {
-  color: #3F5D45;
-}
-
-header .banner-menu a span {
-  letter-spacing: 10px;
-}
-
-header .banner-menu a .banner-menu-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background-color: rgba(63, 93, 69, 0.8);
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-}
-
-header .banner-menu a .banner-menu-bg:hover, header .banner-menu a .banner-menu-bg:focus {
-  background-color: rgba(255, 225, 128, 0.8);
-}
-
-header .banner-menu a .banner-menu-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -2;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  -webkit-transition: -webkit-filter 0.3s;
-  transition: -webkit-filter 0.3s;
-  transition: filter 0.3s;
-  transition: filter 0.3s, -webkit-filter 0.3s;
-}
-
-header .banner-menu a .banner-menu-img:hover, header .banner-menu a .banner-menu-img:focus {
-  -webkit-filter: blur(0);
-          filter: blur(0);
-}
-
-@media (min-width: 768px) {
-  .whyChoice .textSet {
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-  }
-}
-
-.whyChoice .textSet {
-  line-height: 2;
-  color: #8DA291;
-}
-
-@media (min-width: 768px) {
-  .whyChoice .moveSet-img {
-    margin-top: -24px;
-    margin-bottom: -24px;
-  }
-}
-
-.whyChoice .moveSet-img {
-  min-height: 250px;
-}
-
-.item-card .item-img {
-  height: 350px;
-  position: relative;
-}
-
-.item-card .item-img .item-img-best {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  letter-spacing: 3px;
-}
-
-.item-card .item-img .item-img-love-checkbox {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.item-card .item-img .item-img-love-checkbox .item-img-love {
-  cursor: pointer;
-}
-
-.item-card .item-img .item-img-love-checkbox .item-img-love .fas-love,
-.item-card .item-img .item-img-love-checkbox .item-img-love .item-img-love-check {
-  display: none;
-}
-
-.item-card .item-img .item-img-love-checkbox .item-img-love .item-img-love-check:checked ~ .far-love {
-  display: none;
-}
-
-.item-card .item-img .item-img-love-checkbox .item-img-love .item-img-love-check:checked ~ .fas-love {
-  display: block;
-}
-
-.banner {
-  min-height: 496px;
-}
-
-@media (min-width: 768px) {
-  .btnSet {
-    border: 1px solid #ccc !important;
-  }
-}
-
-.cart-img {
-  height: 110px;
-  min-width: 110px;
-}
-
-.stepLine {
-  position: relative;
-}
-
-.stepLine::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  border: 1px solid #fff;
-}
-
-.stepLine .stepDot {
-  background-color: #3F5D45;
-  z-index: 1;
-  border-radius: 50px;
-  color: #fff;
-  overflow: hidden;
-}
-
-.stepLineDark {
-  position: relative;
-}
-
-.stepLineDark::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  border: 1px solid #3F5D45;
-}
-
-.stepLineDark .stepDotDark {
-  background-color: #fff;
-  z-index: 1;
-  border-radius: 50px;
-  color: #3F5D45;
-  overflow: hidden;
-}
-
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -14107,11 +13927,227 @@ a.text-mainLight:hover, a.text-mainLight:focus {
   }
 }
 
+header .banner {
+  height: 496px;
+}
+
+header .banner-menu {
+  margin-top: -90px;
+}
+
+header .banner-menu a {
+  height: 250px;
+  position: relative;
+  z-index: 2;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  overflow: hidden;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+header .banner-menu a span {
+  letter-spacing: 10px;
+}
+
+header .banner-menu a .banner-menu-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgba(63, 93, 69, 0.8);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+header .banner-menu a .banner-menu-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+}
+
+header .banner-menu a:hover, header .banner-menu a:focus {
+  color: #3F5D45 !important;
+}
+
+header .banner-menu a:hover .banner-menu-bg, header .banner-menu a:focus .banner-menu-bg {
+  background-color: rgba(255, 225, 128, 0.8);
+}
+
+header .banner-menu a:hover .banner-menu-img, header .banner-menu a:focus .banner-menu-img {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+@media (min-width: 992px) {
+  .why-choice .text-set {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+}
+
+.why-choice .text-set {
+  line-height: 2;
+  color: #8DA291;
+}
+
+@media (min-width: 992px) {
+  .why-choice .moveset-img {
+    margin-top: -24px;
+    margin-bottom: -24px;
+  }
+}
+
+.why-choice .moveset-img {
+  min-height: 250px;
+}
+
+.item-card .item-img {
+  height: 350px;
+  position: relative;
+}
+
+.item-card .item-img .item-img-best {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  letter-spacing: 3px;
+}
+
+.item-card .item-img .item-img-love-checkbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.item-card .item-img .item-img-love-checkbox .item-img-love {
+  cursor: pointer;
+}
+
+.item-card .item-img .item-img-love-checkbox .item-img-love .fas-love,
+.item-card .item-img .item-img-love-checkbox .item-img-love .item-img-love-check {
+  display: none;
+}
+
+.item-card .item-img .item-img-love-checkbox .item-img-love .item-img-love-check:checked ~ .far-love {
+  display: none;
+}
+
+.item-card .item-img .item-img-love-checkbox .item-img-love .item-img-love-check:checked ~ .fas-love {
+  display: block;
+}
+
+.banner {
+  min-height: 496px;
+}
+
+.btn-set {
+  border: 1px solid #ccc !important;
+}
+
+.checkbox input[type="checkbox"] {
+  position: relative;
+}
+
+.checkbox input[type="checkbox"] ~ .remember::after,
+.checkbox input[type="checkbox"] ~ .remember::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  bottom: 101px;
+  width: 20px;
+  height: 20px;
+  background-color: #EAF0ED;
+}
+
+.checkbox input[type="checkbox"] ~ .remember::after {
+  display: none;
+}
+
+.checkbox input[type="checkbox"] ~ .remember::before {
+  display: block;
+}
+
+.checkbox input[type="checkbox"]:checked ~ .remember::before {
+  display: none;
+}
+
+.checkbox input[type="checkbox"]:checked ~ .remember::after {
+  display: block;
+  content: "\f00c";
+  text-align: center;
+  line-height: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #FFE180;
+  color: #3F5D45;
+}
+
+.cart-img {
+  height: 110px;
+  min-width: 110px;
+}
+
+.step-line {
+  position: relative;
+}
+
+.step-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border: 1px solid #fff;
+}
+
+.step-line .step-dot {
+  background-color: #3F5D45;
+  z-index: 1;
+  border-radius: 50px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.step-linedark {
+  position: relative;
+}
+
+.step-linedark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border: 1px solid #3F5D45;
+}
+
+.step-linedark .step-dotdark {
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 50px;
+  color: #3F5D45;
+  overflow: hidden;
+}
+
 body {
   font-family: 'Noto Sans TC', sans-serif !important;
 }
 
-body .bgCover {
+body .bg-cover {
   background-position: center center;
   background-size: cover;
 }

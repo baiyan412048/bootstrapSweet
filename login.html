@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container px-0">
       <h1 class="d-none">六角甜點店</h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -23,7 +23,7 @@
           width="220" height="40">
         <img class="d-lg-none" src="img/logo-sm.svg" alt="六角甜點店" height="20">
       </a>
-      <a class="text-mainG d-flex align-items-center order-md-1 ml-5" href="cart.html">
+      <a class="nav-link text-mainG d-flex align-items-center order-lg-1" href="cart.html">
         <i class="fas fa-shopping-cart"></i>
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,20 +50,20 @@
       <div class="col-md-5">
         <div class="bg-mainLight p-30 my-md-20">
           <p class="h4 text-center mb-5">— 連結社群帳號 —</p>
-          <div class="row ">
-            <div class="col-4 col-md-12 p-0 mb-4">
-              <button class="btn btn-mainLight btn-block btn-lg p-5 btnSet">
-                <img src="img/ic-facebook-logotype.svg" class="img-fluid" width="97" alt="">
+          <div class="row no-gutters">
+            <div class="col-4 col-md-12 mb-4">
+              <button class="btn btn-mainLight btn-block btn-lg p-5 btn-set h-100">
+                <img src="img/ic-facebook-logotype.svg" class="img-fluid" width="100px" alt="">
               </button>
             </div>
-            <div class="col-4 col-md-12 mb-4 p-0">
-              <button class="btn btn-mainLight btn-block btn-lg p-5 btnSet">
-                <img src="img/ic-google-logotype.svg" class="img-fluid" width="97" alt="">
+            <div class="col-4 col-md-12 mb-4">
+              <button class="btn btn-mainLight btn-block btn-lg p-5 btn-set h-100">
+                <img src="img/ic-google-logotype.svg" class="img-fluid" width="100px" alt="">
               </button>
             </div>
-            <div class="col-4 col-md-12 mb-4 p-0">
-              <button class="btn btn-mainLight btn-block btn-lg p-5 btnSet">
-                <img src="img/ic-yahoo-logotype.svg" class="img-fluid" width="97" alt="">
+            <div class="col-4 col-md-12 mb-4">
+              <button class="btn btn-mainLight btn-block btn-lg p-5 btn-set h-100">
+                <img src="img/ic-yahoo-logotype.svg" class="img-fluid" width="100px" alt="">
               </button>
             </div>
           </div>
@@ -74,23 +74,23 @@
           <p class="h3 text-white text-center m-30 d-none d-md-block">會員登入</p>
           <div class="input-group my-30">
             <div class="input-group-prepend">
-              <span class="input-group-text">
+              <span class="input-group-text justify-content-center" style="width: 56px;">
                 <i class="fas fa-user"></i>
               </span>
             </div>
-            <input type="text" class="form-control" placeholder="電子信箱 / 手機">
+            <input type="text" class="form-control" placeholder="電子信箱 / 手機" style="height: 56px;">
           </div>
           <div class="input-group mb-30">
             <div class="input-group-prepend">
-              <span class="input-group-text">
+              <span class="input-group-text justify-content-center" style="width: 56px;">
                 <i class="fas fa-key"></i>
               </span>
             </div>
-            <input type="password" class="form-control" placeholder="請輸入使用者密碼">
+            <input type="password" class="form-control" placeholder="請輸入使用者密碼" style="height: 56px;">
           </div>
           <div class="checkbox">
-            <input class="remember" type="checkbox" id="remember">
-            <label for="remember" class="text-white">記住我</label>
+            <input type="checkbox" id="remember" class="d-none">
+            <label for="remember" class="text-white remember ml-30">記住我</label>
           </div>
         </div>
         <a href="#" class="btn btn-mainY btn-block p-5">
@@ -112,14 +112,14 @@
         <div class="col-md-5">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">
-                <i class="fas fa-envelope"></i>
+              <span class="input-group-text justify-content-center" id="basic-addon1" style="width: 56px;">
+                <i class="fas fa-envelope h5 m-0"></i>
               </span>
             </div>
-            <input type="text" class="form-control">
+            <input type="email" class="form-control" style="height: 56px;">
             <div class="input-group-append">
-              <button class="btn btn-mainY" type="button">
-                <i class="fas fa-arrow-right"></i>
+              <button class="btn btn-mainY" type="button" style="width: 56px;">
+                <i class="fas fa-arrow-right h5 m-0"></i>
               </button>
             </div>
           </div>
@@ -167,7 +167,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
   </script>
-  <script src="js/all.js"></script>
 </body>
 
 </html>
